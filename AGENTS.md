@@ -18,9 +18,16 @@ The application should help extract:
 The project should stay practical, readable, and maintainable.
 Avoid fake enterprise architecture and unnecessary abstractions.
 
-## Main UI Philosophy
+## UI Philosophy & Visual Reference
 
-The main page should feel like a professional tool dashboard, not a marketing website or an online store.
+UI mockups are located in:
+
+- docs/ui/desktop-dashboard.png
+- docs/ui/mobile-dashboard.png
+
+These images are the primary visual reference for layout, spacing, and overall styling.
+
+The application should feel like a professional information-processing tool, not a marketing website, startup landing page, or online store.
 
 The interface should be:
 - utilitarian
@@ -44,11 +51,14 @@ Avoid:
 - excessive whitespace
 - marketing-style layouts
 - flashy “AI magic” visuals
+- oversized cards and paddings
+- social-media-like UI patterns
 
-The UI should resemble:
+The interface should resemble:
 - a workstation
 - a knowledge terminal
 - a cockpit/tool dashboard
+- a professional productivity system
 
 Prefer:
 - split layouts
@@ -57,6 +67,21 @@ Prefer:
 - keyboard-friendly interactions
 - compact tables and cards
 - persistent search and filtering
+- table/list-oriented layouts
+
+Visual style:
+- light neutral backgrounds
+- subtle borders
+- restrained colors
+- practical typography
+- compact spacing
+- clear information hierarchy
+
+Important:
+- reproduce mockup layout proportions closely
+- prioritize readability and fast interaction
+- prefer practical UX over decorative styling
+- avoid “creative reinterpretation” of the provided layouts
 
 The user should feel:
 > “I am operating an information-processing tool.”
