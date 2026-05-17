@@ -18,6 +18,52 @@ The application should help extract:
 The project should stay practical, readable, and maintainable.
 Avoid fake enterprise architecture and unnecessary abstractions.
 
+## Main UI Philosophy
+
+The main page should feel like a professional tool dashboard, not a marketing website or an online store.
+
+The interface should be:
+- utilitarian
+- information-dense
+- fast
+- functional
+- visually calm
+
+Primary focus:
+- source library
+- processing status
+- quick access to summaries
+- search
+- filtering
+- low-friction actions
+
+Avoid:
+- hero sections
+- large banners
+- decorative illustrations
+- excessive whitespace
+- marketing-style layouts
+- flashy “AI magic” visuals
+
+The UI should resemble:
+- a workstation
+- a knowledge terminal
+- a cockpit/tool dashboard
+
+Prefer:
+- split layouts
+- side panels
+- drawers
+- keyboard-friendly interactions
+- compact tables and cards
+- persistent search and filtering
+
+The user should feel:
+> “I am operating an information-processing tool.”
+
+Not:
+> “I am browsing a startup landing page.”
+
 ## Tech stack
 
 ### Client
