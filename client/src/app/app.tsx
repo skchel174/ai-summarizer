@@ -1,9 +1,9 @@
-import { BrowserRouter } from "react-router-dom";
+import { queryClient } from "@/shared/api/query-client";
 import { QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "../shared/api/queryClient";
+import { BrowserRouter } from "react-router-dom";
 import { Router } from "./router";
 
-export function Providers() {
+export function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>

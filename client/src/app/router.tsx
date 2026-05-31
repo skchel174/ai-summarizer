@@ -1,14 +1,10 @@
-import { Routes, Route } from "react-router-dom";
-import { HomePage } from "../pages/home/HomePage";
-import { SourcesPage } from "../pages/sources/SourcesPage";
-import { SummaryPage } from "../pages/summary/SummaryPage";
+import { Route, Routes } from "react-router-dom";
+import { DashboardPage } from "../pages/dashboard/dashboard-page";
 
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/sources" element={<SourcesPage />} />
-      <Route path="/summary/:id" element={<SummaryPage />} />
+      <Route path="/" element={<DashboardPage />} />
     </Routes>
   );
 }
