@@ -13,9 +13,8 @@ export function AppSidebar({
         "hidden lg:block",
         "min-h-[calc(100vh-56px)] shrink-0 overflow-hidden",
         "border-r border-slate-200 bg-blue-50/20",
-        "transition-[width] duration-200 ease-in-out",
-        "lg:w-16",
-        isExpanded ? "xl:w-64" : "xl:w-16",
+        "lg:w-18",
+        isExpanded ? "xl:w-64" : "xl:w-18",
       )}
     >
       {children}
