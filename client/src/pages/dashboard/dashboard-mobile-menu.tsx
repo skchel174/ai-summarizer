@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { DashboardMenuItem } from "./dashboard-menu-item";
-import type { AppMenuItem } from "./dashboard-menu.config";
+import type { AppMenuItem } from "./dashboard-menu.types";
 import { isMenuItemActive } from "./dashboard-menu.utils";
 
 export function DashboardMobileMenu({ menu }: { menu: AppMenuItem[] }) {

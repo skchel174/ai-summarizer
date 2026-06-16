@@ -1,11 +1,33 @@
 import { useMediaQuery } from "@/shared/lib/use-media-query";
+import { ClipboardList, User } from "lucide-react";
 import { useState } from "react";
 import { AppDrawer } from "./dashboard-drawer";
 import { AppHeader } from "./dashboard-header";
 import { DashboardMenu } from "./dashboard-menu";
-import { appMenu } from "./dashboard-menu.config";
+import type { AppMenuItem } from "./dashboard-menu.types";
 import { DashboardMobileMenu } from "./dashboard-mobile-menu";
 import { AppSidebar } from "./dashboard-sidebar";
+
+const appMenu: AppMenuItem[] = [
+  {
+    label: "Sources",
+    href: "/",
+    icon: ClipboardList,
+  },
+];
+
+const mobileMenu: AppMenuItem[] = [
+  {
+    label: "Sources",
+    href: "/",
+    icon: ClipboardList,
+  },
+  {
+    label: "Profile",
+    href: "/profile",
+    icon: User,
+  },
+];
 
 export function DashboardLayout({ children }: { children: React.ReactNode }) {
   const isDesktop = useMediaQuery("(min-width: 1280px)");
@@ -27,7 +49,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
       <AppHeader onMenuClick={toggleMenu} />
 
       <div className="flex flex-1">
-        <AppSidebar isExpanded={isSidebarExpanded}>
+        <AppSidebar isExpanded={isDesktop && isSidebarExpanded}>
           <DashboardMenu menu={appMenu} showLabel={isDesktop && isSidebarExpanded} />
         </AppSidebar>
 
@@ -38,7 +60,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
         <DashboardMenu menu={appMenu} showLabel />
       </AppDrawer>
 
-      <DashboardMobileMenu menu={appMenu} />
+      <DashboardMobileMenu menu={mobileMenu} />
     </div>
   );
 }

@@ -13,7 +13,7 @@ export function AppDrawer({
     <div
       className={clsx(
         "fixed inset-0 z-40",
-        "xl:hidden",
+        "hidden md:block xl:hidden",
         isOpen ? "pointer-events-auto" : "pointer-events-none",
       )}
     >

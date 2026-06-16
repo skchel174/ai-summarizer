@@ -10,10 +10,9 @@ export function AppSidebar({
   return (
     <aside
       className={clsx(
-        "hidden lg:block",
+        "hidden flex-col md:flex md:w-18",
         "min-h-[calc(100vh-56px)] shrink-0 overflow-hidden",
         "border-r border-slate-200 bg-blue-50/20",
-        "lg:w-18",
         isExpanded ? "xl:w-64" : "xl:w-18",
       )}
     >
