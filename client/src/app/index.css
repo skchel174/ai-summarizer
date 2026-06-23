@@ -1,1 +1,16 @@
+@import "@fontsource/nunito-sans/400.css";
+@import "@fontsource/nunito-sans/500.css";
+@import "@fontsource/nunito-sans/600.css";
+
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
