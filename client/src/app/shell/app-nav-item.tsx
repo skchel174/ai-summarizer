@@ -2,9 +2,9 @@ import clsx from "clsx";
 import type { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
-type DashboardMenuItemVariant = "sidebar" | "mobile";
+type AppNavItemVariant = "sidebar" | "mobile";
 
-export function DashboardMenuItem({
+export function AppNavItem({
   label,
   href,
   icon,
@@ -16,7 +16,7 @@ export function DashboardMenuItem({
   href: string;
   icon: LucideIcon;
   active: boolean;
-  variant: DashboardMenuItemVariant;
+  variant: AppNavItemVariant;
   showLabel?: boolean;
 }) {
   const Icon = icon;

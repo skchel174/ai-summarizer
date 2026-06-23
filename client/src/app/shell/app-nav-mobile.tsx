@@ -1,9 +1,8 @@
 import { useLocation } from "react-router-dom";
-import { DashboardMenuItem } from "./dashboard-menu-item";
-import type { AppMenuItem } from "./dashboard-menu.types";
-import { isMenuItemActive } from "./dashboard-menu.utils";
+import { isMenuItemActive, type AppMenuItem } from "./app-menu";
+import { AppNavItem } from "./app-nav-item";
 
-export function DashboardMobileMenu({ menu }: { menu: AppMenuItem[] }) {
+export function AppNavMobile({ menu }: { menu: AppMenuItem[] }) {
   const location = useLocation();
 
   return (
@@ -13,7 +12,7 @@ export function DashboardMobileMenu({ menu }: { menu: AppMenuItem[] }) {
     >
       <div className="flex items-center gap-1">
         {menu.map((item) => (
-          <DashboardMenuItem
+          <AppNavItem
             variant="mobile"
             key={item.label}
             label={item.label}

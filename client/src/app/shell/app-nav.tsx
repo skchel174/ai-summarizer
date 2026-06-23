@@ -1,18 +1,17 @@
 import clsx from "clsx";
 import { useLocation } from "react-router-dom";
-import { DashboardMenuItem } from "./dashboard-menu-item";
-import type { AppMenuItem } from "./dashboard-menu.types";
-import { isMenuItemActive } from "./dashboard-menu.utils";
+import { isMenuItemActive, type AppMenuItem } from "./app-menu";
+import { AppNavItem } from "./app-nav-item";
 import { SidebarUserCard } from "./sidebar-user-card";
 
-export function DashboardMenu({ menu, showLabel }: { menu: AppMenuItem[]; showLabel: boolean }) {
+export function AppNav({ menu, showLabel }: { menu: AppMenuItem[]; showLabel: boolean }) {
   const location = useLocation();
 
   return (
     <div className="flex flex-col h-full">
       <nav className="py-2 px-3 flex flex-col gap-0.5 flex-1" aria-label="App navigation">
         {menu.map((item) => (
-          <DashboardMenuItem
+          <AppNavItem
             variant="sidebar"
             key={item.label}
             label={item.label}
