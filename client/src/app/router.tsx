@@ -1,3 +1,4 @@
+import SourceListPage from "@/source-list/source-list.page";
 import { createBrowserRouter } from "react-router-dom";
 import { AppShell } from "./shell/app-shell";
 
@@ -8,7 +9,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <div>Source List</div>,
+        element: <SourceListPage />,
       },
     ],
   },
