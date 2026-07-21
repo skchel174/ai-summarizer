@@ -1,4 +1,4 @@
-import SourceListPage from "@/source-list/source-list.page";
+import SourceListPage from "@/summarization-list/summarization-list.page";
 import { createBrowserRouter } from "react-router-dom";
 import { AppShell } from "./shell/app-shell";
 
