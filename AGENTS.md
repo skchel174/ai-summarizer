@@ -260,6 +260,12 @@ src/
     utils/
 ```
 
+## Feature specifications
+
+Before modifying summarization list filtering, sorting, view modes, or pagination, read:
+
+- `docs/summarization-list-filtering.md`
+
 ### Server rules
 
 - Routes/controllers handle HTTP only.
